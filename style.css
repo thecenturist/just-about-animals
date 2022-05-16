@@ -1,0 +1,27 @@
+body {
+    background-image: url("./site-background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.website-headline{
+    /* background-image: url("./headline.jpg"); */
+    color: white;
+    background-size: cover;
+    padding: 50px 20px;
+
+}
+
+.col {
+    padding-bottom: 30px;
+}
+
+.site-header{
+    justify-content: center;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    
+}
+.site-header h2 {
+    font-size: 4em;
+}

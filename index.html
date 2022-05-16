@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just About Animals - v1</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="container-lg site-header">
+        <h2>JUST ABOUT ANIMALS - A DevOps Project</h2>
+    </div>
+
+    <!-- Page Headline -->
+    <div class="container-lg website-headline">
+        <h3>Just About Animals is a website displaying informational facts about different animals. Click on an animal to learn more about them.</h3>
+    </div>
+
+    <!-- Animal Information -->
+    <div class="container-lg">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="whale.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Whale</h5>
+                        <p class="card-text">While tooth whales are grabbers and suckers, baleen whales are either skimmers, suckers or gulpers!</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#whaleModal">Learn More </button>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="goat.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Goat</h5>
+                        <p class="card-text">Goats were one of the first animals to be tamed by humans and were being herded 9,000 years ago.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#goatModal">Learn More </button>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="cat.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cat</h5>
+                        <p class="card-text">Cats are believed to be the only mammals who don’t taste sweetness.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#catModal">Learn More </button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="rabbit.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Rabbit</h5>
+                        <p class="card-text">Rabbits are very social creatures that live in groups. They live in warrens — a series of tunnels and rooms that they dig underground.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rabbitModal">Learn More </button>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="polar.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Polar Bear</h5>
+                        <p class="card-text">POLAR BEARS ARE ACTUALLY BLACK, NOT WHITE.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#polarModal">Learn More </button>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="raccoon.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Raccoon</h5>
+                        <p class="card-text">Raccoons are highly intelligent and curious creatures, but they can also be a nuisance to any homeowner.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#raccoonModal">Learn More </button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="owl.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Owl</h5>
+                        <p class="card-text">When located at different heights on the owl’s head, their ears are able to pinpoint the location of sounds in multiple dimensions. Ready, aim, strike.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#owlModal">Learn More </button>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="donkey.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Donkey</h5>
+                        <p class="card-text">They are members of the Equidae family, which also includes horses and zebras.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#donkeyModal">Learn More </button>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="mountain-lion.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mountain Lion</h5>
+                        <p class="card-text">Found almost everywhere in North and South America, mountain lions are one of the most incredible predators you’ll find in the western hemisphere</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mountainLionModal">Learn More </button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="llama.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Llama</h5>
+                        <p class="card-text">Llamas are highly social mammals that range in the Andes Mountains of Latin America.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#llamaModal">Learn More </button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="whaleModal" tabindex="-1" aria-labelledby="whaleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="whaleModalLabel">Whale</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>- Whales are complex singers.</p>
+                    <p>- Massive marine animals.</p>
+                    <p>- Long Annual Migrations</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="goatModal" tabindex="-1" aria-labelledby="goatModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="goatModalLabel">Goat</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>- Goat meat is the most consumed meat per capita worldwide</p>
+                    <p>- The life span of a goat is about that of a dog</p>
+                    <p>- Baby goats (kids) are standing and taking their first steps within minutes of being born.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="catModal" tabindex="-1" aria-labelledby="catModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="catModalLabel">Cat</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>- Cats are nearsighted, but their peripheral vision and night vision are much better than that of humans.</p>
+                    <p>- Cats have 230 bones, while humans only have 206.</p>
+                    <p>- Cats have whiskers on the backs of their front legs, as well.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="rabbitModal" tabindex="-1" aria-labelledby="rabbitModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="rabbitModalLabel">Rabbit</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>- Rabbits perform an athletic leap, known as a ‘binky‘, when they’re happy — performing twists and kicks in mid air!</p>
+                    <p>- Like cats, happy rabbits purr when they’re content and relaxed.</p>
+                    <p>- These masters of hearing can turn their ears 180 degrees. Wow.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="polarModal" tabindex="-1" aria-labelledby="polarModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="polarModalLabel">Polar Bear</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>- THEY CAN SWIM CONSTANTLY FOR DAYS AT A TIME</p>
+                    <p>- LESS THAN 2% OF POLAR BEAR HUNTS ARE SUCCESSFUL</p>
+                    <p>- SCIENTISTS CAN EXTRACT POLAR BEAR DNA FROM JUST THEIR FOOTPRINTS</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="raccoonModal" tabindex="-1" aria-labelledby="raccoonModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="raccoonModalLabel">Raccoon</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>- THEY'RE NAMED FOR THEIR UNIQUE HANDS.</p>
+                    <p>- THEY CAN BE FOUND ACROSS THE GLOBE, THANKS TO HUMANS.</p>
+                    <p>- WE ALMOST HAD LAB RACCOONS INSTEAD OF LAB RATS.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="owlModal" tabindex="-1" aria-labelledby="owlModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="owlModalLabel">Owl</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>- Owls can rotate their necks 270 degrees.</p>
+                    <p>- A group of owls is called a parliament.</p>
+                    <p>- Owls hunt other owls. Great Horned Owls are the top predator of the smaller Barred Owl.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="donkeyModal" tabindex="-1" aria-labelledby="donkeyModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="donkeyModalLabel">Donkey</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>- Owls can rotate their necks 270 degrees.</p>
+                    <p>- A group of owls is called a parliament.</p>
+                    <p>- Owls hunt other owls. Great Horned Owls are the top predator of the smaller Barred Owl.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="mountainLionModal" tabindex="-1" aria-labelledby="mountainLionModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="mountainLionModalLabel">Mountain Lion</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>- Mountain lions don’t roar.</p>
+                    <p>- The largest mountain lion ever recorded weighed 276 pounds</p>
+                    <p>- Mountain lions can run up to 50 mph.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="llamaModal" tabindex="-1" aria-labelledby="llamaModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="llamaModal">Llama</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>- Llamas are able to learn to understand and perform basic tasks. Scientists even taught llamas how to use a mirror!</p>
+                    <p>- Llamas live in herds, and will even 'adopt' groups of sheep or goats as their own herd.</p>
+                    <p>- The average llamas is between 5'6"-5'9" tall.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js" type="text/javascript"></script>
+</body>
+</html>
